@@ -1419,7 +1419,7 @@ The older H0–H4 terminology is deprecated and should be removed or translated 
 
 ### Finding
 
-Trying to recall information from memory is generally more useful for long-term retention than only rereading or rewatching material.
+Retrieval/testing generally produces better later retention than simply restudying previously learned material.
 
 ### Implication for LearningOS
 
@@ -1431,6 +1431,20 @@ Examples:
 - predict code behavior
 - write a small implementation without looking
 - answer a question before checking the source
+
+### Evidence
+
+Primary support:
+
+- SRC-001 — Testing Effect in Classrooms
+
+Evidence strength:
+
+**Strong / synthesis-level**
+
+Important limitation:
+
+The evidence strongly supports retrieval/testing for learning and retention, but it does not mean every software-development skill should be converted into a quiz.
 
 ---
 
@@ -1457,21 +1471,56 @@ Spacing should depend on:
 
 The system should adapt review timing instead of relying only on a fixed schedule.
 
+### Evidence
+
+Primary support:
+
+- SRC-002 — Distributed Practice / Spacing
+
+Evidence strength:
+
+**Strong / synthesis-level**
+
+Important limitation:
+
+Most of the classic evidence concerns verbal recall and related memory tasks.
+
+LearningOS should therefore use the general spacing principle for programming, but should not assume that exact verbal-memory intervals transfer directly to complex coding skills.
+
 ---
 
 ## Research Topic 003 — Delayed Performance
 
 ### Finding
 
-Being able to perform immediately after studying can overestimate learning.
-
-Performance after a meaningful delay provides stronger evidence of retention.
+Immediate successful performance does not by itself establish durable retention. Performance after a meaningful delay provides direct evidence about what remains available later.
 
 ### Implication for LearningOS
 
-A topic should not become "retained/mastered" immediately after a successful lesson or exercise.
+A topic should not become Retained immediately after a successful lesson or exercise.
 
 The system should reassess it later.
+
+### Evidence
+
+Primary support:
+
+- SRC-002 — Distributed Practice / Spacing
+- SRC-008 — Successive Relearning and Long-Term Retention
+
+Evidence strength:
+
+**Moderate to strong**
+
+SRC-002 provides broad evidence about delayed retention and spacing.
+
+SRC-008 provides more direct experimental evidence that relearning across sessions can substantially improve long-term retention compared with relying on one learning session.
+
+Important limitation:
+
+"Meaningful delay" does not have one universal duration.
+
+The appropriate delay depends on the skill, learning goal, previous evidence, and desired retention period.
 
 ---
 
@@ -1479,7 +1528,7 @@ The system should reassess it later.
 
 ### Finding
 
-Retrieval is especially useful when mistakes are followed by corrective feedback.
+Retrieval/testing can be more useful when learners receive appropriate corrective feedback, especially when errors or misconceptions need correction. The effectiveness of feedback depends on its content and context.
 
 ### Implication for LearningOS
 
@@ -1489,23 +1538,39 @@ Attempt → Evaluate → Feedback → Retry → Delayed Reassessment
 
 The learner should normally attempt first before seeing a full solution.
 
+### Evidence
+
+Primary support:
+
+- SRC-001 — Testing Effect in Classrooms
+- SRC-003 — Educational Feedback
+
+Evidence strength:
+
+**Strong, but context-dependent**
+
+SRC-001 identifies corrective feedback as one factor that moderates the classroom testing effect.
+
+SRC-003 shows that feedback has an overall positive learning effect, while also showing substantial variation between different kinds of feedback.
+
+Important limitation:
+
+LearningOS should not interpret this as:
+
+"more feedback is always better"
+
+or:
+
+"the full solution should immediately be shown after every error."
+
 ---
 
 ## Research Topic 005 — Programming Skill Is Multi-Dimensional
 
 ### Finding
 
-Programming ability cannot be measured only by remembering syntax or successfully completing one coding exercise.
-
-Relevant abilities include:
-
-- explaining concepts
-- tracing and understanding code
-- writing code
-- debugging
-- modifying existing code
-- choosing an appropriate approach
-- transferring knowledge to a new problem
+Programming competence is broader than syntax recall or success on one coding exercise.
+Authoritative computing curricula describe software-development capability using multiple forms of performance, including reading and writing programs, using data structures and algorithms, testing, debugging, and development tools.
 
 ### Implication for LearningOS
 
@@ -1520,15 +1585,50 @@ Current evidence dimensions:
 5. Adapt / Transfer
 6. Retain
 
+### Evidence
+
+Primary support:
+
+- SRC-006 — CS2023
+
+Evidence strength:
+
+**Strong for curriculum/competency scope**
+
+CS2023 treats Software Development Fundamentals as broader than programming syntax alone and includes capabilities such as:
+
+- reading and understanding code
+- writing programs
+- selecting and using data structures
+- algorithmic reasoning
+- testing
+- debugging
+- development tools
+
+Important limitation:
+
+CS2023 is a curricular guideline.
+
+It does not validate LearningOS's exact six evidence dimensions:
+
+1. Explain
+2. Read / Trace
+3. Build / Apply
+4. Debug
+5. Adapt / Transfer
+6. Retain
+
+Those six dimensions are a LearningOS assessment design informed by broader competency evidence.
+
 ---
 
 ## Research Topic 006 — Help Usage Matters
 
 ### Finding
 
-A correct answer does not provide the same evidence when the learner received substantial help.
+Assistance changes how a successful result should be interpreted.
 
-Help-seeking itself can be useful, but excessive guidance can hide knowledge gaps.
+Help-seeking behavior can be productive or unproductive depending on context, so LearningOS should record the type and amount of assistance rather than treating all help use as equivalent.
 
 ### Implication for LearningOS
 
@@ -1536,12 +1636,41 @@ Attempts should record two separate dimensions:
 
 - Reference Use: R0–R2
 - Instructional Assistance: A0–A4
-  Documentation/reference use must not be treated as equivalent to instructional hints or solution exposure.
-  A useful learning trend is generally decreasing instructional assistance over time, such as:
-  A3 → A2 → A1 → A0
-  Reference use may still remain at R1 during realistic professional work when exact recall is not the learning target.
-  The canonical definitions are maintained in:
-  Reference Use & Instructional Assistance Model v0.1
+
+Documentation/reference use must not be treated as equivalent to instructional hints or solution exposure.
+
+A useful learning trend is generally decreasing instructional assistance over time, such as:
+
+A3 → A2 → A1 → A0
+
+Reference use may still remain at R1 during realistic professional work when exact recall is not the learning target.
+
+The canonical definitions are maintained in:
+
+**Reference Use & Instructional Assistance Model v0.1**
+
+### Evidence
+
+Primary support:
+
+- SRC-009 — Context-Sensitive Help-Seeking Assessment
+
+Evidence strength:
+
+**Moderate / domain-specific**
+
+The research supports context-sensitive interpretation of help-seeking behavior and fine-grained observation of learner actions.
+
+Important limitation:
+
+The exact LearningOS distinction between:
+
+- Reference Use: R0–R2
+- Instructional Assistance: A0–A4
+
+is our operational design.
+
+It has not been independently validated as a universal educational scale.
 
 ---
 
@@ -1549,16 +1678,8 @@ Attempts should record two separate dimensions:
 
 ### Finding
 
-The final answer alone may hide important information about learning.
-
-Useful signals can include:
-
-- number of attempts
-- recurring mistakes
-- hint usage
-- debugging behavior
-- delayed success
-- whether the task was familiar or novel
+Final correctness alone can hide important information about learning.
+Repeated interactions, errors, assistance use, timing, and other process evidence can provide additional information about how a learner is performing and changing over time.
 
 ### Implication for LearningOS
 
@@ -1569,32 +1690,122 @@ Current working evidence schema:
 - skill
 - evidence type
 - result
-- independence/help
+- reference use
+- instructional assistance
 - attempts
 - error type
 - delay since previous learning/use
 - task novelty
 - artifact or code evidence when useful
 
+### Evidence
+
+Primary support:
+
+- SRC-009 — Context-Sensitive Help-Seeking Assessment
+- SRC-010 — Knowledge Tracing Survey
+
+Evidence strength:
+
+**Moderate to strong for structured learning environments**
+
+Research in intelligent tutoring and knowledge tracing shows that learner state can be investigated using sequences of observable interactions rather than only one final answer.
+
+Examples of potentially useful signals include:
+
+- repeated correctness or failure
+- help-seeking behavior
+- interaction history
+- time-related forgetting information
+- changing performance across practice
+
+Important limitation:
+
+The following LearningOS signals are broader than what these sources directly validate:
+
+- debugging strategy
+- project artifacts
+- Git history
+- task novelty
+- AI-dependency patterns
+- transfer across real projects
+
+These are evidence-informed LearningOS extensions that must be evaluated during the pilot.
+
 ---
 
-## Research Topic 008 — Possible Gap Types
+## Research Topic 008 — Working Gap Taxonomy
 
-This area is not finished yet.
+### Finding
 
-Current candidate gap categories:
+There is no evidence that the current LearningOS gap categories form a standardized or scientifically validated universal taxonomy.
 
-- knowledge gap
-- recall gap
-- application gap
-- debugging gap
-- transfer gap
-- prerequisite/dependency gap
-- retention gap
-- AI-dependency gap
-- careless/slip error
+Instead, the categories are a working diagnostic model created to distinguish different patterns that may require different learning responses.
 
-These categories still need proper research and detection rules.
+The taxonomy is informed by research concepts such as:
+
+- knowledge components
+- slips and guesses
+- forgetting
+- help seeking
+- programming competencies
+- delayed performance
+
+but the exact category boundaries are LearningOS design decisions.
+
+Concept / Knowledge
+Misconception
+Recall
+Application
+Debugging
+Transfer
+Problem-Solving / Decomposition
+Prerequisite / Dependency
+Retention
+AI / Help Dependency
+Slip / Careless Error
+
+Detection rules are defined provisionally in Gap Detection Rules v0.1 below and remain subject to pilot validation.
+
+### Evidence
+
+Relevant support:
+
+- SRC-006 — CS2023
+- SRC-009 — Context-Sensitive Help-Seeking Assessment
+- SRC-010 — Knowledge Tracing Survey
+- SRC-002 — Distributed Practice / Spacing
+- SRC-008 — Successive Relearning and Long-Term Retention
+
+Evidence strength:
+
+**Mixed — taxonomy itself is provisional**
+
+Relevant research supports several underlying distinctions:
+
+- one wrong response can occur despite underlying knowledge
+- one correct response can occur without secure knowledge
+- knowledge can weaken over time
+- help use needs contextual interpretation
+- programming performance contains multiple capabilities
+- delayed performance can reveal retention problems
+
+However, no source listed here validates this exact eleven-category LearningOS taxonomy.
+
+### Status
+
+Treat each category as a diagnostic hypothesis.
+
+The pilot should test whether the categories:
+
+- can be distinguished reliably
+- lead to different useful interventions
+- avoid excessive labeling
+- need merging or splitting
+
+If two categories consistently produce the same evidence and learning action, consider merging them.
+
+If one category repeatedly hides meaningfully different problems, consider splitting it.
 
 ---
 
@@ -1724,7 +1935,7 @@ but cannot independently use it to solve or build something.
 
 Explain = Pass  
 Trace = Pass  
-Build = Fail or heavy help
+Build = Fail or requires meaningful instructional assistance
 
 → Application Gap.
 
@@ -1843,7 +2054,7 @@ Strong signals include:
 
 ### First failure
 
-Do not immediately remove mastery status.
+Do not immediately downgrade a previously Solid-now or Retained skill.
 
 Mark:
 
@@ -2116,21 +2327,36 @@ This helps distinguish remembering an example from retaining transferable skill.
 
 ---
 
-Rule 6 — Assistance Changes the Interpretation of a Review
-Fully unaided delayed success
+## Rule 6 — Assistance Changes the Interpretation of a Review
+
+### Fully Unaided Delayed Success
+
 R0 + A0 after a meaningful delay
-→ very strong evidence when unaided recall/performance is the target.
-Documentation-only delayed success
+
+→ very strong evidence when unaided recall or performance is the target.
+
+### Documentation-Only Delayed Success
+
 R1 + A0 after a meaningful delay
+
 → useful and potentially strong evidence for realistic professional programming performance.
+
 It is weaker than R0 + A0 only when unaided recall itself is the target.
-Hint-assisted success
+
+### Hint-Assisted Success
+
 A1–A3
+
 → useful relearning or supported-performance evidence, but weaker independent-retention evidence.
+
 Schedule a later A0 attempt when independent performance matters.
-Substantial solution exposure
+
+### Substantial Solution Exposure
+
 A4
+
 → do not count the current attempt as Retained.
+
 The learner should later attempt a fresh related problem with A0.
 
 ---
@@ -2201,26 +2427,55 @@ The system should not attempt to memorize everything.
 
 ---
 
-# Initial Retention State Model
+# Retention State Integration
 
-A skill may move through:
+Retention does not define a second skill-state model.
 
-**New**
-→ recently learned
+LearningOS uses the canonical skill states defined in:
 
-**Consolidating**
-→ successful now but insufficient delayed evidence
+**Mastery Rubric v0.1**
+
+Canonical states:
+
+- Untested
+- Learning
+- Working
+- Solid-now
+- Retained
+- Refresh Needed
+- Relearning
+
+Retention-specific behavior should be represented through evidence and scheduling fields rather than separate states.
+
+Useful retention-related evidence may include:
+
+- last meaningful attempt
+- last independent success
+- last delayed success
+- delay since previous learning or use
+- delayed reassessment result
+- next reassessment
+- previous forgetting or refresh history
+
+For example:
+
+A newly successful skill may remain:
+
+**Solid-now**
+
+until sufficient delayed evidence supports:
 
 **Retained**
-→ successful after meaningful delay with suitable independence
+
+If later delayed performance meaningfully weakens, the skill may move to:
 
 **Refresh Needed**
-→ previously retained but delayed performance has weakened
+
+If active restoration is required, it may move to:
 
 **Relearning**
-→ being restored after forgetting
 
-These states are provisional and may be refined during the pilot.
+This keeps retention logic consistent with the canonical LearningOS skill-state model.
 
 ---
 
@@ -2552,7 +2807,8 @@ During a learning interaction, the coach should eventually be able to derive:
 - skill being tested
 - evidence type
 - result
-- help level
+- reference use
+- instructional assistance
 - attempts
 - recurring error
 - misconception signal
@@ -2638,12 +2894,35 @@ This working model is informed by research on:
 
 Important current evidence includes:
 
-- Shen & Tamkin, 2026 — How AI Assistance Impacts the Formation of Coding Skills
-- Bisra et al., 2018 — Inducing Self-Explanation: A Meta-Analysis
-- 2026 controlled programming-course research comparing scaffolded and unrestricted AI assistants
-- 2026 randomized programming research comparing scaffolded AI, unrestricted ChatGPT, and no-AI conditions
+- SRC-011 — Guided vs Unrestricted AI in Programming Education
+- SRC-012 — Performance vs Learning in AI-Supported Programming
+- SRC-013 — AI Assistance and Coding Skill Formation
+- SRC-014 — Self-Explanation Meta-Analysis
+- SRC-015 — AI Chatbots in Programming Education Meta-Analysis
 
-The evidence base for generative-AI tutoring is still developing.
+### Evidence Interpretation
+
+The evidence base for generative-AI tutoring is developing rapidly but is less mature than research areas such as retrieval practice and spacing.
+
+Current evidence does not justify a simple conclusion such as:
+
+"AI is bad for learning"
+
+or:
+
+"AI always improves learning."
+
+Instead, outcomes appear to depend on factors such as:
+
+- how much reasoning the learner still performs
+- whether complete solutions are exposed
+- whether assistance is scaffolded
+- task and learner characteristics
+- what learning outcome is measured
+
+The exact LearningOS AI Coach rules remain an evidence-informed operational design rather than a scientifically validated universal tutoring protocol.
+
+Therefore these rules should be treated as a testable LearningOS design rather than permanent pedagogical truth.
 
 Therefore these rules should be treated as a testable LearningOS design rather than permanent pedagogical truth.
 
@@ -2695,7 +2974,7 @@ What evidence suggests learning occurred?
 **What remains weak?**  
 Did a possible gap appear?
 
-**How much help was required?**  
+**What reference use and instructional assistance were required?**  
 Was performance becoming more independent?
 
 **What should happen next?**  
@@ -2795,9 +3074,9 @@ Passing the exact exercises already practiced is weak evidence of transfer.
 
 ---
 
-## Layer 7 — Delayed Mastery Check
+## Layer 7 — Delayed Retention Check
 
-A skill should not receive durable mastery status solely from immediate performance.
+A skill should not receive Retained status solely from immediate performance.
 
 For important skills, later evidence should test whether the learner can still perform after time has passed.
 
@@ -2917,7 +3196,7 @@ Run a broader milestone diagnostic.
 
 ### Over longer periods
 
-Use delayed mastery checks for important skills and occasionally review whether the LearningOS itself is producing useful results.
+Use delayed retention checks for important skills and occasionally review whether the LearningOS itself is producing useful results.
 
 The exact cadence should be refined during the pilot.
 
@@ -2954,7 +3233,7 @@ Evidence should be interpreted according to:
 - number of converging observations
 - type of ability demonstrated
 
-A recent easy success with heavy help should not outweigh multiple delayed independent failures.
+A recent easy success with substantial instructional assistance should not outweigh multiple delayed independent failures.
 
 Similarly, one isolated failure should not outweigh a strong history of independent performance without further investigation.
 
@@ -3105,7 +3384,7 @@ This makes later questions practical, such as:
 - What has not been independently tested recently?
 - Which misconceptions keep returning?
 - What prerequisite is blocking several skills?
-- Which supposedly mastered skills failed delayed review?
+- Which skills previously considered Solid-now or Retained failed delayed review?
 - What should be reassessed next?
 
 ---
@@ -3143,7 +3422,7 @@ It should contain rules that need to apply repeatedly, such as:
 - prefer attempt-before-solution
 - use progressive hints
 - record meaningful learning evidence
-- do not silently change mastery based on one failure
+- do not silently downgrade skill state based on one failure
 
 CLAUDE.md should not become a database or giant knowledge dump.
 
@@ -3180,9 +3459,9 @@ Examples:
 - conceptual distinctions
 - important factual knowledge
 
-Anki should not determine whether a complex programming skill is mastered.
+Anki should not by itself determine the LearningOS state of a complex programming skill.
 
-Programming mastery requires other evidence such as:
+Strong programming-skill evidence requires other evidence such as:
 
 - building
 - debugging
@@ -4133,7 +4412,7 @@ Only investigate areas where the broad screen reveals:
 
 - failures
 - contradictory evidence
-- heavy help dependence
+- heavy instructional-assistance dependence
 - uncertain prerequisites
 - unexpectedly strong ability
 
@@ -4621,7 +4900,7 @@ After baseline evidence is collected:
 
 Skip or compress beginner instruction.
 
-### Fragile area
+### Working / needs strengthening
 
 Use targeted solidification.
 
@@ -6024,7 +6303,7 @@ After broad screening, LearningOS should generate:
 
 Likely candidates for compressed learning or skipping basic material.
 
-## Fragile / working areas
+## Working / needs-strengthening areas
 
 Need strengthening rather than complete restart.
 
