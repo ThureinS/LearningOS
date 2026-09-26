@@ -437,14 +437,6 @@ If a source is later found to be weak, misrepresented, obsolete, or contradicted
 
 ---
 
-# Audit Status
-
-This registry is incomplete.
-
-SRC-001 through SRC-007 are the first verified core sources.
-
-Remaining research sections still need source-by-source validation and mapping.
-
 ## SRC-008 — Successive Relearning and Long-Term Retention
 
 ### Citation
@@ -837,3 +829,41 @@ The meta-analysis also does not validate the exact LearningOS AI Coach rules.
 - broader context for AI-supported programming education
 - avoiding overly negative or overly positive conclusions about AI
 - treating AI interaction design as an empirical question
+
+---
+
+# Audit Status
+
+The core LearningOS source registry currently contains:
+
+**SRC-001 through SRC-015**
+
+Core research areas already revalidated for the v0.1 pilot include:
+
+- retrieval practice
+- spacing
+- delayed performance
+- feedback
+- programming competency scope
+- help-seeking / assistance
+- process evidence
+- knowledge tracing
+- AI-supported programming learning
+- self-explanation
+
+Research Topic 001–008 and the AI Learning Coach research basis have been explicitly mapped to registry sources.
+
+Not every sentence in RESEARCH.md has an individual SRC reference.
+
+That is not required before the pilot.
+
+Future research should continue to:
+
+- prefer primary, official, peer-reviewed, or synthesis-level evidence
+- record important limitations
+- distinguish external evidence from LearningOS design decisions
+- update the registry when stronger evidence becomes available
+
+The source registry is considered sufficient for:
+
+**LearningOS Design v0.1 pilot use.**

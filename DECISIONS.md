@@ -77,19 +77,39 @@ Immediate success directly after studying is weaker evidence.
 
 ---
 
-## Decision 006 — AI help must be visible in assessment
+## Decision 006 — Assistance must be visible in assessment
 
 A correct result is not enough by itself.
 
-The system should distinguish between:
+LearningOS must separately record:
 
-- independent work
-- using documentation only
-- receiving a small hint
-- receiving guided help
-- seeing a substantial part of the solution
+### Reference Use
 
-A task completed with heavy AI assistance should not be treated the same as an independent success.
+- R0 — No reference
+- R1 — Lookup / reference
+- R2 — Worked example / structural reference
+
+### Instructional Assistance
+
+- A0 — No instructional assistance
+- A1 — Orientation
+- A2 — Small hint
+- A3 — Guided scaffolding
+- A4 — Substantial solution exposure
+
+Reference use and instructional assistance are not equivalent.
+
+For example:
+
+R1 + A0
+
+may still represent realistic independent professional performance.
+
+A task completed with substantial instructional assistance should not be treated the same as an A0 independent success.
+
+The canonical definitions are maintained in:
+
+**Reference Use & Instructional Assistance Model v0.1**
 
 ---
 

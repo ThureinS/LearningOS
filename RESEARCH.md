@@ -1809,22 +1809,6 @@ If one category repeatedly hides meaningfully different problems, consider split
 
 ---
 
-# Open Research Questions
-
-The next research step is:
-
-## Gap Detection Rules v0.1
-
-We need to determine:
-
-- what pattern of evidence indicates each gap type
-- how many failures are meaningful
-- how to distinguish forgetting from never learning
-- how to distinguish a conceptual problem from a careless mistake
-- how hint dependence should affect skill status
-- how real project evidence should affect mastery
-- when the system should lower or raise a skill status
-
 # Gap Detection Rules v0.1
 
 ## Core Rule
@@ -2924,8 +2908,6 @@ The exact LearningOS AI Coach rules remain an evidence-informed operational desi
 
 Therefore these rules should be treated as a testable LearningOS design rather than permanent pedagogical truth.
 
-Therefore these rules should be treated as a testable LearningOS design rather than permanent pedagogical truth.
-
 # Monitoring Cadence & Checkpoints v0.1
 
 ## Core Principle
@@ -3364,7 +3346,8 @@ A local SQLite database is the preferred candidate for data such as:
 - skills tested
 - evidence type
 - pass / partial / fail
-- help level
+- reference use
+- instructional assistance
 - error type
 - gaps
 - reviews
@@ -6173,7 +6156,8 @@ For each meaningful diagnostic attempt record:
 - evidence type
 - diagnostic mode
 - result
-- help level
+- reference use
+- instructional assistance
 - number of meaningful attempts
 - error/gap signals
 - novelty

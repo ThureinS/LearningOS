@@ -45,20 +45,15 @@ Career / Jobs
 
 ## Current Phase
 
-Audit and re-validation before baseline administration.
+LearningOS Design v0.1 is ready to be frozen for pilot use.
 
-The main LearningOS research and design foundation has reached v0.1.
+The initial research, assessment model, assistance model, retention model, skill model, tool architecture, and Software Development baseline design have been completed to a sufficient v0.1 level.
 
-Before starting the real Software Development baseline, we are validating the actual repository to:
+The next phase is no longer document design.
 
-- remove contradictions and duplicates
-- synchronize the plan with completed work
-- standardize terminology
-- strengthen research provenance and citations
-- restore any missing canonical definitions
-- verify that the next step is still appropriate
+The next phase is:
 
-We are still not building the full automated system yet.
+**administer the real Software Development baseline and begin collecting actual learner evidence.**
 
 ---
 
@@ -69,22 +64,36 @@ We are still not building the full automated system yet.
 - Learning priorities identified
 - Local LearningOS files established as the durable source of truth
 - Initial bookmark overview completed
-- Mastery Rubric v0.1 designed
-- Monitoring Evidence Schema v0.1 designed
+- Mastery Rubric v0.1
+- Monitoring Evidence Schema v0.1
+- Reference Use & Instructional Assistance Model v0.1
 
 ### Learning and Assessment Research
 
+- Retrieval Practice
+- Spacing
+- Delayed Performance
+- Retrieval With Feedback
+- Programming Skill Model
+- Gap Taxonomy
 - Gap Detection Rules v0.1
 - Retention & Spaced Practice Rules v0.1
 - AI Learning Coach Behavior v0.1
 - Monitoring Cadence & Checkpoints v0.1
 - Skill Model & Knowledge State v0.1
 
+### Research Provenance
+
+- SOURCES.md created
+- SRC-001 through SRC-015 registered
+- Research Topics 001–008 revalidated
+- AI Learning Coach evidence revalidated
+- mature evidence separated from provisional/emerging evidence
+- LearningOS design decisions distinguished from externally validated findings
+
 ### Architecture
 
-- Tool Architecture v0.1
-
-Current preferred core:
+Tool Architecture v0.1 currently prefers:
 
 - local LearningOS
 - Markdown
@@ -92,7 +101,13 @@ Current preferred core:
 - Claude Code
 - Git
 
-This architecture remains provisional until pilot testing.
+Optional/supporting tools may later include:
+
+- Obsidian
+- Anki / FSRS
+- ChatGPT / Claude Chat
+
+The architecture remains provisional until pilot use provides real evidence.
 
 ### Software Development Baseline Design
 
@@ -103,84 +118,56 @@ This architecture remains provisional until pilot testing.
 
 ---
 
-## Current Working Principles
+## Canonical Working Principles
 
 Course completion does not mean mastery.
 
-Strong evidence of learning includes:
+A single success does not automatically establish strong capability.
 
-- meaningful time has passed
-- I can perform without being shown the solution
-- I can work independently
-- I can handle a changed or unfamiliar version of the problem
-- I can debug and explain important failures
-- ideally, I can apply the knowledge naturally inside real work or projects
+A single failure does not automatically establish a knowledge gap.
 
-A single failure does not automatically mean there is a knowledge gap.
+Strong evidence depends on factors such as:
 
-A single success does not automatically mean a skill is mastered.
+- independence
+- reference use
+- instructional assistance
+- delay
+- task novelty
+- evidence type
+- repeated observations
+- authentic application
 
-Important conclusions should come from multiple pieces of evidence when appropriate.
+Canonical skill states are:
 
-The system should preserve the evidence behind its conclusions.
+- Untested
+- Learning
+- Working
+- Solid-now
+- Retained
+- Refresh Needed
+- Relearning
 
----
+Reference use and instructional assistance are recorded separately.
 
-## Current Audit Findings
-
-The first repository audit found several issues that must be corrected before the real baseline begins:
-
-1. PLAN.md had become outdated relative to completed Steps 3–11.
-2. Broad-Screen Diagnostic Blueprint v0.1 appears twice in RESEARCH.md.
-3. Mastery Rubric v0.1 and Monitoring Evidence Schema v0.1 do not currently have clear canonical sections in the repository.
-4. Help-level terminology is inconsistent, especially H1 documentation/reference use versus AI guidance.
-5. Research citations and provenance are not yet equally complete across all research sections.
-6. Some terminology such as Mastered, Retained, Solid-now, Learning, and Fragile needs canonicalization.
-7. The original bookmark audit remains incomplete at the resource-by-resource level.
+Important conclusions should remain explainable from underlying evidence.
 
 ---
 
-## Current Open Work
+## Pilot Freeze Rule
 
-### Immediate — Audit Fix Pass #1
+LearningOS Design v0.1 should now be treated as:
 
-- remove the duplicate Step 11 research section
-- restore/canonicalize Mastery Rubric v0.1
-- restore/canonicalize Monitoring Evidence Schema v0.1
-- resolve help/reference/AI-assistance terminology
-- standardize mastery/state terminology
-- improve research source tracking and citation quality
-- check the remaining repository for contradictions or missing decisions
+**frozen enough to test, not permanently final.**
 
-### After Audit
+During the pilot, do not redesign the system because of every small inconvenience.
 
-- create Baseline Administration Protocol v0.1
-- run the real Software Development broad-screen baseline
-- perform targeted diagnostics where evidence requires them
-- build the initial evidence-based learning path
+Change the model when:
 
-### Deferred but not forgotten
-
-- resource-by-resource bookmark quality audit
-- Thai learning track
-- English learning track
-- deeper tool automation
-- Anki / FSRS integration decision
-- dashboards and advanced analytics
-
----
-
-## Important
-
-All v0.1 models are working models, not permanent rules.
-
-They may be changed when:
-
-- stronger research contradicts them
-- repository audits reveal inconsistencies
-- real baseline evidence exposes weaknesses
-- pilot usage creates unnecessary friction
-- a simpler design works better
+- repeated real evidence reveals a problem
+- a rule produces poor learning decisions
+- important evidence cannot be represented
+- the workflow creates excessive friction
+- stronger research materially changes a decision
 
 The process remains:
 
@@ -188,10 +175,31 @@ The process remains:
 
 ---
 
+## Known Deferred Work
+
+These are intentionally not blockers for the Software Development baseline pilot:
+
+- resource-by-resource bookmark quality audit
+- Thai learning track
+- English learning track
+- deeper automation
+- final SQLite schema
+- Anki / FSRS integration
+- dashboards and advanced analytics
+- full resource recommendation system
+
+They remain part of LearningOS but do not need to be completed before the baseline.
+
+---
+
 ## Immediate Next Step
 
-Complete **LearningOS Audit Fix Pass #1** before creating or administering the real baseline.
+Create:
 
-The next concrete correction is:
+**Baseline Administration Protocol v0.1**
 
-**Remove the duplicate Broad-Screen Diagnostic Blueprint v0.1 from RESEARCH.md.**
+Then begin:
+
+**Software Development Broad-Screen Baseline — Session A**
+
+The baseline should use fresh tasks and begin collecting the first real LearningOS learner evidence.
